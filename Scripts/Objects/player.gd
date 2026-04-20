@@ -30,7 +30,7 @@ func return_dir() -> Vector2:
 	return dir
 
 func move_to_tile(dir) -> void:
-	moving = !moving
+	toggle_moving()
 	var tween := create_tween()
 	var target_position = position + dir * TILE_SIZE
 	
@@ -38,7 +38,8 @@ func move_to_tile(dir) -> void:
 	.set_trans(Tween.TRANS_SINE)\
 	.set_ease(Tween.EASE_IN_OUT)
 	
-	tween.finished.connect(func():
-		moving = false
-	)
+	tween.finished.connect(toggle_moving)
 	
+
+func toggle_moving() -> void:
+	moving = !moving
