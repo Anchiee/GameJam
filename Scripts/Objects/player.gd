@@ -1,6 +1,7 @@
 extends Area2D
 
 @export var TILE_SIZE: int = 64
+@onready var character_sprite: Sprite2D = $Sprite2D
 
 var moving: bool = false
 const MOVE_TIME: float = 0.12
@@ -20,13 +21,20 @@ func return_dir() -> Vector2:
 
 	if Input.is_action_just_pressed("right"):
 		dir.x = 1
+		character_sprite.rotation = deg_to_rad(90)
+
 	elif Input.is_action_just_pressed("left"):
 		dir.x = -1
+		character_sprite.rotation = deg_to_rad(-90)
+
 	elif Input.is_action_just_pressed("down"):
 		dir.y = 1
+		character_sprite.rotation = deg_to_rad(180)
+
 	elif Input.is_action_just_pressed("up"):
 		dir.y = -1
-		
+		character_sprite.rotation = deg_to_rad(0)
+
 	return dir
 
 func move_to_tile(dir) -> void:

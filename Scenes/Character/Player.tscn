@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://j54lupoylhq8"]
 
 [ext_resource type="Script" uid="uid://jesxfp6jwwli" path="res://Scripts/Objects/player.gd" id="1_kyqiw"]
-[ext_resource type="Texture2D" uid="uid://n3b5tkdvnp1o" path="res://icon.svg" id="1_rpqav"]
+[ext_resource type="Texture2D" uid="uid://cyxnw7gqtcm0r" path="res://Assets/Character/kot1.png" id="2_at620"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rpqav"]
-size = Vector2(180, 158)
+size = Vector2(142, 510)
 
 [node name="Player" type="Area2D" unique_id=2133219243]
 script = ExtResource("1_kyqiw")
@@ -12,9 +12,9 @@ script = ExtResource("1_kyqiw")
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=598104760]
 position = Vector2(-28, 35.5)
 scale = Vector2(0.633, 0.5)
-texture = ExtResource("1_rpqav")
+texture = ExtResource("2_at620")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=698975666]
-position = Vector2(-30, 35.5)
+position = Vector2(-39.5, 36.5)
 scale = Vector2(0.5, 0.5)
 shape = SubResource("RectangleShape2D_rpqav")
