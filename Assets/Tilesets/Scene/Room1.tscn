@@ -1,9 +1,9 @@
 [gd_scene format=4 uid="uid://db5l67183xv6o"]
 
-[ext_resource type="Texture2D" uid="uid://bd6youn3v3qsx" path="res://Assets/Tilesheets/tilesheet_complete.png" id="1_3wg58"]
+[ext_resource type="Texture2D" uid="uid://bd6youn3v3qsx" path="res://Assets/Tilesheets/tilesheet_complete.png" id="1_slb0q"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jjjfa"]
-texture = ExtResource("1_3wg58")
+texture = ExtResource("1_slb0q")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0

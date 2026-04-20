@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bmw5vrswromi7"]
+
+[ext_resource type="PackedScene" uid="uid://defpp2rd2n6la" path="res://Assets/Tilesets/Scene/Room2.tscn" id="1_xd7qt"]
+[ext_resource type="PackedScene" uid="uid://cfc4l3yc6ss0p" path="res://Scenes/Interactive/Key.tscn" id="2_kvrw6"]
+[ext_resource type="PackedScene" uid="uid://j54lupoylhq8" path="res://Scenes/Character/Player.tscn" id="3_vdgpl"]
+
+[node name="2" type="Node2D" unique_id=2134650588]
+
+[node name="TileMapLayer" parent="." unique_id=2141429955 instance=ExtResource("1_xd7qt")]
+position = Vector2(62, 46)
+
+[node name="Key" parent="." unique_id=1993847812 instance=ExtResource("2_kvrw6")]
+position = Vector2(281, 105)
+
+[node name="Player" parent="." unique_id=2133219243 instance=ExtResource("3_vdgpl")]
+position = Vector2(113, 158)
