@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://covlqicldsvfg"]
+
+[ext_resource type="PackedScene" uid="uid://db5l67183xv6o" path="res://Assets/Tilesets/Room1.tscn" id="1_eleur"]
+[ext_resource type="PackedScene" uid="uid://j54lupoylhq8" path="res://Scenes/Character/Player.tscn" id="2_ua8jo"]
+[ext_resource type="PackedScene" uid="uid://cfc4l3yc6ss0p" path="res://Scenes/Interactive/Key.tscn" id="3_cft3q"]
+
+[node name="World1" type="Node2D" unique_id=1230662885]
+
+[node name="World1" parent="." unique_id=2067364355 instance=ExtResource("1_eleur")]
+position = Vector2(19, 85)
+
+[node name="Key" parent="." unique_id=393371892 instance=ExtResource("3_cft3q")]
+position = Vector2(523, 162)
+
+[node name="Player" parent="." unique_id=2133219243 instance=ExtResource("2_ua8jo")]
+position = Vector2(244, 208)
