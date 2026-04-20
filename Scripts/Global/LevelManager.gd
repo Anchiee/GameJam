@@ -8,7 +8,7 @@ func _ready() -> void:
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	pass
 
 
@@ -17,4 +17,5 @@ func increase_room() -> void:
 
 func change_room() -> void:
 	increase_room()
-	get_tree().change_scene_to_file(level_directory + str(current_level) + ".tscn")
+	if current_level <= 4:
+		get_tree().change_scene_to_file(level_directory + str(current_level) + ".tscn")

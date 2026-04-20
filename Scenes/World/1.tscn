@@ -1,18 +1,18 @@
 [gd_scene format=3 uid="uid://dvye5uku74v8s"]
 
-[ext_resource type="PackedScene" uid="uid://c54nme4c75gh4" path="res://Assets/Tilesets/World1.tscn" id="1_kqhnd"]
-[ext_resource type="PackedScene" uid="uid://j54lupoylhq8" path="res://Scenes/Character/Player.tscn" id="2_ua8jo"]
-[ext_resource type="PackedScene" uid="uid://cfc4l3yc6ss0p" path="res://Scenes/Interactive/Key.tscn" id="3_cft3q"]
+[ext_resource type="PackedScene" uid="uid://j54lupoylhq8" path="res://Scenes/Character/Player.tscn" id="1_lyj32"]
+[ext_resource type="PackedScene" uid="uid://cfc4l3yc6ss0p" path="res://Scenes/Interactive/Key.tscn" id="2_6sjw4"]
+[ext_resource type="PackedScene" uid="uid://db5l67183xv6o" path="res://Assets/Tilesets/Scene/Room1.tscn" id="3_6sjw4"]
 
 [node name="World1" type="Node2D" unique_id=1230662885]
 
-[node name="World" parent="." unique_id=2067364355 instance=ExtResource("1_kqhnd")]
-position = Vector2(295, 129)
+[node name="World1" parent="." unique_id=2067364355 instance=ExtResource("3_6sjw4")]
+position = Vector2(77, 111)
 
-[node name="Player" parent="." unique_id=2133219243 instance=ExtResource("2_ua8jo")]
+[node name="Player" parent="." unique_id=2133219243 instance=ExtResource("1_lyj32")]
 position = Vector2(358, 205)
 collision_mask = 2
 
-[node name="Key" parent="." unique_id=1993847812 instance=ExtResource("3_cft3q")]
+[node name="Key" parent="." unique_id=1993847812 instance=ExtResource("2_6sjw4")]
 position = Vector2(575, 227)
 collision_layer = 2
