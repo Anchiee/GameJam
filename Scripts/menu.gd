@@ -16,4 +16,4 @@ func _on_quit_pressed() -> void:
 
 
 func _on_play_pressed() -> void:
-	get_tree().change_scene_to_file("uid://n16jxrld6kmp")
+	get_tree().change_scene_to_file("res://Scenes/World/World1.tscn")
