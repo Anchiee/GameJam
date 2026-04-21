@@ -1,9 +1,19 @@
 [gd_scene format=3 uid="uid://cw3vi7artvssd"]
 
 [ext_resource type="Script" uid="uid://j3f5de680a3c" path="res://Scripts/GUI/menu.gd" id="1_666cy"]
+[ext_resource type="Texture2D" uid="uid://xyfhlddyxa1e" path="res://Assets/Backgrounds/menu.png" id="2_jang4"]
 
 [node name="Menu" type="CanvasLayer" unique_id=1540697523]
 script = ExtResource("1_666cy")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=161124893]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_jang4")
+expand_mode = 1
 
 [node name="GameName" type="Label" parent="." unique_id=937624927]
 anchors_preset = 5
