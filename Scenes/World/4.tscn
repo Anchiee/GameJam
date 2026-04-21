@@ -7,6 +7,33 @@
 [ext_resource type="PackedScene" uid="uid://d0teppcidowhs" path="res://Scenes/Interactive/gate.tscn" id="5_6604w"]
 [ext_resource type="PackedScene" uid="uid://cjk1nvrqgwquv" path="res://Scenes/Interactive/box.tscn" id="6_6604w"]
 [ext_resource type="PackedScene" uid="uid://dicshcynvwfcy" path="res://Scenes/Interactive/hole.tscn" id="7_xvcl3"]
+[ext_resource type="PackedScene" uid="uid://tbafpxe60amn" path="res://Scripts/GUI/item.tscn" id="8_0wpll"]
+[ext_resource type="Texture2D" uid="uid://b1rrbtb4u01ap" path="res://Assets/Objects/pillow.png" id="9_kbltr"]
+[ext_resource type="PackedScene" uid="uid://ji6psrnfl7fk" path="res://Scripts/GUI/animations/dialogue.tscn" id="9_yclsq"]
+[ext_resource type="Texture2D" uid="uid://du76bvxub4yoa" path="res://Assets/animations/poduszka/poduszka0000.png" id="11_13x1x"]
+[ext_resource type="Texture2D" uid="uid://m8hg5aqhk1ga" path="res://Assets/animations/poduszka/poduszka0001.png" id="12_56ihj"]
+[ext_resource type="Texture2D" uid="uid://cojuedguc2emx" path="res://Assets/animations/poduszka/poduszka0002.png" id="13_3mksc"]
+[ext_resource type="Texture2D" uid="uid://dqgv5wweyqj4l" path="res://Assets/animations/poduszka/poduszka0003.png" id="14_11d68"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qia0p"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_13x1x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_56ihj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_3mksc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_11d68")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="Template" type="Node2D" unique_id=740274816]
 
@@ -35,3 +62,18 @@ position = Vector2(128, 320)
 
 [node name="Hole" parent="." unique_id=2074352169 instance=ExtResource("7_xvcl3")]
 position = Vector2(192, 64)
+
+[node name="Item" parent="." unique_id=500011058 node_paths=PackedStringArray("dialogue") instance=ExtResource("8_0wpll")]
+position = Vector2(320, 384)
+dialogue = NodePath("../dialogue")
+item_texture = ExtResource("9_kbltr")
+
+[node name="dialogue" parent="." unique_id=1680645263 instance=ExtResource("9_yclsq")]
+visible = false
+position = Vector2(576, 384)
+sprite_frames = SubResource("SpriteFrames_qia0p")
+questio = "Dlaczego ten biały obłok leży na ziemi i czy mogę go natychmiast zaanektować?"
+dial1 = "To Twoja nowa baza operacyjna. Przewidywany czas drzemki: 18 godzin."
+dial2 = "To pułapka. Jak tylko na niej zaśniesz, ktoś na pewno zrobi ci zdjęcie i wrzuci do sieci."
+dial3 = "To lądowisko dla kotów. Amortyzuje upadki z szafy, o ile trafisz."
+dial4 = "Magazyn kłaków. Twoim zadaniem jest wypełnić ją futrem w 100%."

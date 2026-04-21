@@ -1,10 +1,37 @@
 [gd_scene format=4 uid="uid://bmw5vrswromi7"]
 
 [ext_resource type="PackedScene" uid="uid://db5l67183xv6o" path="res://Assets/Tilesets/Scene/Room1.tscn" id="1_vdgpl"]
+[ext_resource type="Texture2D" uid="uid://bohvif3pg3o7l" path="res://Assets/animations/nozyczki/nozyczki0000.png" id="2_5byjk"]
 [ext_resource type="PackedScene" uid="uid://cfc4l3yc6ss0p" path="res://Scenes/Interactive/Key.tscn" id="2_kvrw6"]
 [ext_resource type="PackedScene" uid="uid://j54lupoylhq8" path="res://Scenes/Character/Player.tscn" id="3_vdgpl"]
+[ext_resource type="Texture2D" uid="uid://bvmu7wyptivyj" path="res://Assets/animations/nozyczki/nozyczki0001.png" id="3_wueuv"]
+[ext_resource type="Texture2D" uid="uid://cx8gr71joggbu" path="res://Assets/animations/nozyczki/nozyczki0002.png" id="4_sbal8"]
 [ext_resource type="PackedScene" uid="uid://dicshcynvwfcy" path="res://Scenes/Interactive/hole.tscn" id="5_2aik4"]
+[ext_resource type="Texture2D" uid="uid://i8s4k6duyq6x" path="res://Assets/animations/nozyczki/nozyczki0003.png" id="5_712qv"]
 [ext_resource type="PackedScene" uid="uid://cjk1nvrqgwquv" path="res://Scenes/Interactive/box.tscn" id="5_pwexc"]
+[ext_resource type="PackedScene" uid="uid://tbafpxe60amn" path="res://Scripts/GUI/item.tscn" id="6_2aik4"]
+[ext_resource type="Texture2D" uid="uid://pt6clwow2md" path="res://Assets/Objects/scissors.png" id="7_h6akq"]
+[ext_resource type="PackedScene" uid="uid://ji6psrnfl7fk" path="res://Scripts/GUI/animations/dialogue.tscn" id="8_b1m65"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_h6akq"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_5byjk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_wueuv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_sbal8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_712qv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="2" type="Node2D" unique_id=2134650588]
 
@@ -27,3 +54,18 @@ position = Vector2(128, 128)
 
 [node name="Box" parent="." unique_id=1105865369 instance=ExtResource("5_pwexc")]
 position = Vector2(320, 448)
+
+[node name="Item" parent="." unique_id=500011058 node_paths=PackedStringArray("dialogue") instance=ExtResource("6_2aik4")]
+position = Vector2(960, 128)
+dialogue = NodePath("../dialogue")
+item_texture = ExtResource("7_h6akq")
+
+[node name="dialogue" parent="." unique_id=1680645263 instance=ExtResource("8_b1m65")]
+visible = false
+position = Vector2(640, 320)
+sprite_frames = SubResource("SpriteFrames_h6akq")
+questio = "Hej, co to za dziwne, metalowe kły, które kłapią bez powodu?"
+dial1 = "Fryzjer domowy. Jeden ruch i pozbędziemy się tego kołtuna na ogonie."
+dial2 = "To urządzenie do otwierania saszetek z mokrą karmą. Twoje wybawienie."
+dial3 = "To narzędzie zbrodni na firankach. Ale oficjalnie: nie widziałeś ich nigdy na oczy."
+dial4 = "To metalowe ptaki. Nie ruszaj, bo uszczypną cię w nos."

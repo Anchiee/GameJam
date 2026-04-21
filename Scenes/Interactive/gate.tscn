@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://d0teppcidowhs"]
 
 [ext_resource type="Script" uid="uid://dfapwt1fqobmk" path="res://Scripts/Objects/gate.gd" id="1_wwc0u"]
-[ext_resource type="Texture2D" uid="uid://n3b5tkdvnp1o" path="res://icon.svg" id="2_6winp"]
+[ext_resource type="Texture2D" uid="uid://528gmdjvmilr" path="res://Assets/Objects/brama.png" id="2_6winp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6winp"]
 size = Vector2(64, 64)

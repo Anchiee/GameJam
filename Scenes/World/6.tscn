@@ -6,6 +6,33 @@
 [ext_resource type="PackedScene" uid="uid://cjk1nvrqgwquv" path="res://Scenes/Interactive/box.tscn" id="4_lg7ol"]
 [ext_resource type="PackedScene" uid="uid://bbtpay2h3cpsd" path="res://Scenes/Interactive/button.tscn" id="5_2vs4c"]
 [ext_resource type="PackedScene" uid="uid://d0teppcidowhs" path="res://Scenes/Interactive/gate.tscn" id="6_p4cn1"]
+[ext_resource type="PackedScene" uid="uid://tbafpxe60amn" path="res://Scripts/GUI/item.tscn" id="7_2vs4c"]
+[ext_resource type="Texture2D" uid="uid://cbfrhxbwl3gwh" path="res://Assets/Objects/karton.png" id="8_p4cn1"]
+[ext_resource type="PackedScene" uid="uid://ji6psrnfl7fk" path="res://Scripts/GUI/animations/dialogue.tscn" id="9_ijtph"]
+[ext_resource type="Texture2D" uid="uid://51prcfwdcvv3" path="res://Assets/animations/pudlo/pudlo1.png" id="10_m6tim"]
+[ext_resource type="Texture2D" uid="uid://cfk407oxjqa68" path="res://Assets/animations/pudlo/pudlo2.png" id="11_kgrqk"]
+[ext_resource type="Texture2D" uid="uid://cjf3525jfecco" path="res://Assets/animations/pudlo/pudlo3.png" id="12_s3i4h"]
+[ext_resource type="Texture2D" uid="uid://bqbgkxsgtmgbk" path="res://Assets/animations/pudlo/pudlo4.png" id="13_d5pwu"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3b45i"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_m6tim")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_kgrqk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_s3i4h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_d5pwu")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="Template" type="Node2D" unique_id=740274816]
 
@@ -65,3 +92,17 @@ gate = NodePath("../Gate")
 [node name="Gate" parent="." unique_id=1428459656 instance=ExtResource("6_p4cn1")]
 position = Vector2(832, 512)
 open_count = 6
+
+[node name="Item" parent="." unique_id=500011058 instance=ExtResource("7_2vs4c")]
+position = Vector2(960, 448)
+item_texture = ExtResource("8_p4cn1")
+
+[node name="dialogue" parent="." unique_id=1680645263 instance=ExtResource("9_ijtph")]
+visible = false
+position = Vector2(571, 320)
+sprite_frames = SubResource("SpriteFrames_3b45i")
+questio = "Widzę dno... Czy to oznacza, że nadchodzi koniec świata i wielki głód?"
+dial1 = "Basen olimpijski, jeśli tylko ktoś naleje tam wody, której i tak nie wypijesz."
+dial2 = "To echo-lokator. Jak w nią uderzysz łapą o 3 rano, usłyszą cię nawet sąsiedzi."
+dial3 = "To nowoczesna rzeźba. Służy do patrzenia z wyrzutem na właściciela."
+dial4 = "To instrument muzyczny. Najlepiej brzmi, gdy przesuwasz go po kafelkach w nocy."

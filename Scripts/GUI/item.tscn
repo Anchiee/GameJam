@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://tbafpxe60amn"]
+
+[ext_resource type="Script" uid="uid://d3pikkqmqxp75" path="res://Scripts/GUI/item.gd" id="1_q804g"]
+[ext_resource type="Texture2D" uid="uid://pt6clwow2md" path="res://Assets/Objects/scissors.png" id="2_q804g"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q804g"]
+size = Vector2(62, 62)
+
+[node name="Item" type="Area2D" unique_id=500011058]
+collision_layer = 0
+collision_mask = 4
+script = ExtResource("1_q804g")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1641256835]
+position = Vector2(32, 32)
+shape = SubResource("RectangleShape2D_q804g")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=506720297]
+offset_right = 64.0
+offset_bottom = 64.0
+texture = ExtResource("2_q804g")
+expand_mode = 1
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

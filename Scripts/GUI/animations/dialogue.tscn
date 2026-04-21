@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://ji6psrnfl7fk"]
+
+[ext_resource type="Script" uid="uid://cpbcb7x8c81u1" path="res://Scripts/GUI/animations/dialogue.gd" id="5_m11xf"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_pdlwm"]
+font_size = 48
+
+[node name="dialogue" type="AnimatedSprite2D" unique_id=1680645263]
+z_index = 5
+script = ExtResource("5_m11xf")
+
+[node name="Label" type="Label" parent="." unique_id=753179381]
+z_index = 6
+offset_left = -384.0
+offset_top = -320.0
+offset_right = 448.0
+offset_bottom = -253.0
+text = "adasda"
+label_settings = SubResource("LabelSettings_pdlwm")
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="HBoxContainer" type="VBoxContainer" parent="." unique_id=155249655]
+z_index = 6
+offset_left = -446.0
+offset_right = 445.0
+offset_bottom = 180.0
+
+[node name="Button" type="Button" parent="HBoxContainer" unique_id=2056117230]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "To urządzenie do otwierania saszetek z mokrą karmą. Twoje wybawienie."
+
+[node name="Button2" type="Button" parent="HBoxContainer" unique_id=782673406]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "To urządzenie do otwierania saszetek z mokrą karmą. Twoje wybawienie."
+
+[node name="Button3" type="Button" parent="HBoxContainer" unique_id=931980771]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "To urządzenie do otwierania saszetek z mokrą karmą. Twoje wybawienie."
+
+[node name="Button4" type="Button" parent="HBoxContainer" unique_id=1930794275]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "To urządzenie do otwierania saszetek z mokrą karmą. Twoje wybawienie."
+
+[connection signal="pressed" from="HBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="HBoxContainer/Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="HBoxContainer/Button4" to="." method="_on_button_4_pressed"]
