@@ -24,7 +24,8 @@ offset_top = 55.0
 offset_right = 54.0
 offset_bottom = 78.0
 grow_horizontal = 2
-text = "[GAME NAME]"
+theme_override_font_sizes/font_size = 30
+text = "Kocia Przygoda"
 
 [node name="ButtonContainer" type="VBoxContainer" parent="." unique_id=822555788]
 anchors_preset = 8
@@ -41,11 +42,16 @@ grow_vertical = 2
 
 [node name="Play" type="Button" parent="ButtonContainer" unique_id=727963732]
 layout_mode = 2
-text = "PLAY"
+theme_override_font_sizes/font_size = 25
+text = "GRAJ
+"
+flat = true
 
 [node name="Quit" type="Button" parent="ButtonContainer" unique_id=725849072]
 layout_mode = 2
-text = "QUIT"
+theme_override_font_sizes/font_size = 25
+text = "WYJDZ"
+flat = true
 
 [connection signal="pressed" from="ButtonContainer/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="ButtonContainer/Quit" to="." method="_on_quit_pressed"]
