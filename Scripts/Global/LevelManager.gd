@@ -8,5 +8,5 @@ func increase_room() -> void:
 
 func change_room() -> void:
 	increase_room()
-	if current_level <= 4:
+	if current_level <= 8:
 		get_tree().change_scene_to_file.call_deferred(level_directory % current_level)
