@@ -7,6 +7,9 @@
 size = Vector2(60, 60)
 
 [node name="Key" type="Area2D" unique_id=1993847812]
+collision_layer = 0
+collision_mask = 4
+monitorable = false
 script = ExtResource("1_bvabp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=693284082]
