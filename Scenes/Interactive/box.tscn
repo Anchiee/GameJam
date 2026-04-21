@@ -4,17 +4,17 @@
 [ext_resource type="Script" uid="uid://ewefbr53psx7" path="res://Scripts/Objects/box.gd" id="1_s8dwy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k42wn"]
-size = Vector2(51, 51)
+size = Vector2(64, 64)
 
 [node name="Box" type="Area2D" unique_id=1105865369]
 script = ExtResource("1_s8dwy")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1342011401]
-offset_right = 51.0
-offset_bottom = 51.0
+offset_right = 64.0
+offset_bottom = 64.0
 texture = ExtResource("1_k42wn")
 expand_mode = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1281963039]
-position = Vector2(25.5, 25.5)
+position = Vector2(32, 32)
 shape = SubResource("RectangleShape2D_k42wn")
