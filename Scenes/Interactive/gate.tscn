@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://d0teppcidowhs"]
+
+[ext_resource type="Script" uid="uid://dfapwt1fqobmk" path="res://Scripts/Objects/gate.gd" id="1_wwc0u"]
+[ext_resource type="Texture2D" uid="uid://n3b5tkdvnp1o" path="res://icon.svg" id="2_6winp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1ndpw"]
+size = Vector2(64, 64)
+
+[node name="Gate" type="StaticBody2D" unique_id=1428459656]
+script = ExtResource("1_wwc0u")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=655842476]
+position = Vector2(32, 32)
+shape = SubResource("RectangleShape2D_1ndpw")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=761970669]
+offset_right = 64.0
+offset_bottom = 64.0
+texture = ExtResource("2_6winp")
+expand_mode = 1
