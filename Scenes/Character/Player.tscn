@@ -4,17 +4,17 @@
 [ext_resource type="Texture2D" uid="uid://cyxnw7gqtcm0r" path="res://Assets/Character/kot1.png" id="2_at620"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rpqav"]
-size = Vector2(51, 51)
+size = Vector2(64, 64)
 
 [node name="Player" type="Area2D" unique_id=2133219243]
 script = ExtResource("1_kyqiw")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=598104760]
-position = Vector2(26, 26)
+position = Vector2(32, 32)
 scale = Vector2(0.317, 0.25)
 texture = ExtResource("2_at620")
-offset = Vector2(7.6611404, 24.857178)
+offset = Vector2(7.6611404, 16.857178)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=698975666]
-position = Vector2(25.5, 25.5)
+position = Vector2(32, 32)
 shape = SubResource("RectangleShape2D_rpqav")
