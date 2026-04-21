@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://bmw5vrswromi7"]
+[gd_scene format=4 uid="uid://bmw5vrswromi7"]
 
 [ext_resource type="PackedScene" uid="uid://defpp2rd2n6la" path="res://Assets/Tilesets/Scene/Room2.tscn" id="1_xd7qt"]
 [ext_resource type="PackedScene" uid="uid://cfc4l3yc6ss0p" path="res://Scenes/Interactive/Key.tscn" id="2_kvrw6"]
@@ -7,7 +7,8 @@
 [node name="2" type="Node2D" unique_id=2134650588]
 
 [node name="TileMapLayer" parent="." unique_id=2141429955 instance=ExtResource("1_xd7qt")]
-position = Vector2(62, 46)
+scale = Vector2(0.189, 0.189)
+tile_map_data = PackedByteArray("AAAAAAAAAQAAAAAAAAABAAAAAQAAAAAAAAACAAAAAQAAAAAAAAADAAAAAQAAAAAAAAAEAAAAAQAAAAAAAAAEAAEAAQAAAAAAAAADAAEAAQAAAAAAAAACAAEAAQAAAAAAAAABAAEAAQAAAAAAAAAAAAEAAQAAAAAAAAA=")
 
 [node name="Key" parent="." unique_id=1993847812 instance=ExtResource("2_kvrw6")]
 position = Vector2(281, 105)
