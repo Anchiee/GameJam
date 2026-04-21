@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://bfuunkyqlwf7s" path="res://Assets/button.png" id="1_aycbr"]
 [ext_resource type="Script" uid="uid://d22afy2yau50m" path="res://Scripts/Objects/button.gd" id="1_dyy51"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_aycbr"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dyy51"]
 size = Vector2(62, 62)
 
 [node name="Button" type="Area2D" unique_id=1111708200]
@@ -19,7 +19,7 @@ expand_mode = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1071692891]
 position = Vector2(32, 32)
-shape = SubResource("RectangleShape2D_aycbr")
+shape = SubResource("RectangleShape2D_dyy51")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]

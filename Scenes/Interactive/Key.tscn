@@ -3,8 +3,8 @@
 [ext_resource type="Script" uid="uid://bai315byg7urs" path="res://Scripts/Objects/key.gd" id="1_bvabp"]
 [ext_resource type="Texture2D" uid="uid://n3b5tkdvnp1o" path="res://icon.svg" id="2_bvabp"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_6b2mn"]
-size = Vector2(60, 60)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bvabp"]
+size = Vector2(62, 62)
 
 [node name="Key" type="Area2D" unique_id=1993847812]
 collision_layer = 0
@@ -14,7 +14,7 @@ script = ExtResource("1_bvabp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=693284082]
 position = Vector2(32, 32)
-shape = SubResource("RectangleShape2D_6b2mn")
+shape = SubResource("RectangleShape2D_bvabp")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1808680108]
 offset_right = 64.0

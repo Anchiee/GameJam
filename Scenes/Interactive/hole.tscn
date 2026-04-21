@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://db5l67183xv6o" path="res://Assets/Tilesets/Scene/Room1.tscn" id="1_bt3eh"]
 [ext_resource type="Script" uid="uid://pbtuc67a7pbr" path="res://Scripts/Objects/hole.gd" id="1_uesmy"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_bt3eh"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4540l"]
 size = Vector2(62, 62)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uesmy"]
@@ -20,7 +20,7 @@ tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=588392449]
 position = Vector2(32, 32)
-shape = SubResource("RectangleShape2D_bt3eh")
+shape = SubResource("RectangleShape2D_4540l")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1418780686]
 z_index = 1

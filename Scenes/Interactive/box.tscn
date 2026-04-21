@@ -3,8 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://ciplrjmlg28go" path="res://Assets/Objects/skrzynka.png" id="1_k42wn"]
 [ext_resource type="Script" uid="uid://ewefbr53psx7" path="res://Scripts/Objects/box.gd" id="1_s8dwy"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_k42wn"]
-size = Vector2(64, 64)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_s8dwy"]
+size = Vector2(62, 62)
 
 [node name="Box" type="CharacterBody2D" unique_id=169786586]
 collision_layer = 2
@@ -21,7 +21,7 @@ expand_mode = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1281963039]
 position = Vector2(32, 32)
-shape = SubResource("RectangleShape2D_k42wn")
+shape = SubResource("RectangleShape2D_s8dwy")
 
 [node name="Up" type="RayCast2D" parent="." unique_id=312269930]
 position = Vector2(32, 1)

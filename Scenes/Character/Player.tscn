@@ -3,8 +3,8 @@
 [ext_resource type="Script" uid="uid://jesxfp6jwwli" path="res://Scripts/Objects/player.gd" id="1_kyqiw"]
 [ext_resource type="Texture2D" uid="uid://cyxnw7gqtcm0r" path="res://Assets/Character/kot1.png" id="2_at620"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_rpqav"]
-size = Vector2(62, 62)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_at620"]
+size = Vector2(61, 61)
 
 [node name="Player" type="Area2D" unique_id=276534887]
 self_modulate = Color(0.6509804, 0.6509804, 0.6509804, 1)
@@ -21,7 +21,7 @@ offset = Vector2(7.6611404, 16.857178)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=698975666]
 position = Vector2(32, 32)
-shape = SubResource("RectangleShape2D_rpqav")
+shape = SubResource("RectangleShape2D_at620")
 
 [node name="Up" type="RayCast2D" parent="." unique_id=1987234040]
 position = Vector2(32, 1)

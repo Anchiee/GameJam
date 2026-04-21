@@ -40,7 +40,8 @@ func move_to_tile(dir) -> void:
 
 
 func disable_collision() -> void:
-	collision_shape_2d.disabled = true
+	collision_shape_2d.set_deferred("disabled", true)
+	collision_shape_2d.position.y += 1000
 	texture_rect.self_modulate.r = 166.0/255.0
 	texture_rect.self_modulate.g = 166.0/255.0
 	texture_rect.self_modulate.b = 166.0/255.0
