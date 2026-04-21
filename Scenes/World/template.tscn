@@ -1,0 +1,17 @@
+[gd_scene format=4 uid="uid://cwfrgmwp3kpng"]
+
+[ext_resource type="PackedScene" uid="uid://defpp2rd2n6la" path="res://Assets/Tilesets/Scene/Room2.tscn" id="1_uil61"]
+[ext_resource type="PackedScene" uid="uid://cfc4l3yc6ss0p" path="res://Scenes/Interactive/Key.tscn" id="2_2mkt4"]
+[ext_resource type="PackedScene" uid="uid://j54lupoylhq8" path="res://Scenes/Character/Player.tscn" id="3_m5cbo"]
+
+[node name="Template" type="Node2D" unique_id=740274816]
+
+[node name="TileMapLayer" parent="." unique_id=2141429955 instance=ExtResource("1_uil61")]
+scale = Vector2(0.189, 0.189)
+tile_map_data = PackedByteArray("AAAAAAAAAQAAAAAAAAAAAAEAAQAAAAAAAAABAAAAAQAAAAAAAAABAAEAAQAAAAAAAAACAAAAAQAAAAAAAAACAAEAAQAAAAAAAAADAAAAAQAAAAAAAAADAAEAAQAAAAAAAAAEAAAAAQAAAAAAAAAEAAEAAQAAAAAAAAA=")
+
+[node name="Key" parent="." unique_id=1993847812 instance=ExtResource("2_2mkt4")]
+position = Vector2(281, 105)
+
+[node name="Player" parent="." unique_id=2133219243 instance=ExtResource("3_m5cbo")]
+position = Vector2(113, 158)
