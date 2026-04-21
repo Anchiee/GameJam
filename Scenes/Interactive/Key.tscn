@@ -3215,7 +3215,7 @@ texture = ExtResource("1_dfgc2")
 sources/0 = SubResource("TileSetAtlasSource_bvabp")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6b2mn"]
-size = Vector2(79, 80)
+size = Vector2(50, 50)
 
 [node name="Key" type="Area2D" unique_id=1993847812]
 script = ExtResource("1_bvabp")
