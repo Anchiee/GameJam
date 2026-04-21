@@ -3221,11 +3221,11 @@ size = Vector2(79, 80)
 script = ExtResource("1_bvabp")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1928511834]
+position = Vector2(-32, -32)
 tile_map_data = PackedByteArray("AAAAAAAAAABEABgAAAAAAAEAAABEABkAAAAAAAIAAABEABoAAAAAAAMAAABEABsAAAABAAAAAABFABgAAAABAAEAAABFABkAAAABAAIAAABFABoAAAABAAMAAABFABsAAAACAAAAAABGABgAAAACAAEAAABGABkAAAACAAIAAABGABoAAAACAAMAAABGABsAAAADAAAAAABHABgAAAADAAEAAABHABkAAAADAAIAAABHABoAAAADAAMAAABHABsAAAA=")
 tile_set = SubResource("TileSet_rg106")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=693284082]
-position = Vector2(32.5, 32)
 shape = SubResource("RectangleShape2D_6b2mn")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
