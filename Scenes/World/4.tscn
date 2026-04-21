@@ -34,4 +34,4 @@ position = Vector2(128, 64)
 position = Vector2(128, 320)
 
 [node name="Hole" parent="." unique_id=2074352169 instance=ExtResource("7_xvcl3")]
-position = Vector2(448, 64)
+position = Vector2(192, 64)
