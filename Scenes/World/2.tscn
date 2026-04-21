@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://db5l67183xv6o" path="res://Assets/Tilesets/Scene/Room1.tscn" id="1_vdgpl"]
 [ext_resource type="PackedScene" uid="uid://cfc4l3yc6ss0p" path="res://Scenes/Interactive/Key.tscn" id="2_kvrw6"]
 [ext_resource type="PackedScene" uid="uid://j54lupoylhq8" path="res://Scenes/Character/Player.tscn" id="3_vdgpl"]
+[ext_resource type="PackedScene" uid="uid://dicshcynvwfcy" path="res://Scenes/Interactive/hole.tscn" id="5_2aik4"]
 [ext_resource type="PackedScene" uid="uid://cjk1nvrqgwquv" path="res://Scenes/Interactive/box.tscn" id="5_pwexc"]
 
 [node name="2" type="Node2D" unique_id=2134650588]
@@ -14,6 +15,12 @@ tile_map_data = PackedByteArray("AAAAAAgAAQAAAAAAAAAAAAkAAQAAAAAAAAABAAgAAQABAAA
 [node name="Key" parent="." unique_id=1993847812 instance=ExtResource("2_kvrw6")]
 position = Vector2(1152, 256)
 scale = Vector2(1, 2)
+
+[node name="Hole" parent="." unique_id=2074352169 instance=ExtResource("5_2aik4")]
+position = Vector2(640, 256)
+
+[node name="Hole2" parent="." unique_id=1117295947 instance=ExtResource("5_2aik4")]
+position = Vector2(640, 320)
 
 [node name="Player" parent="." unique_id=2133219243 instance=ExtResource("3_vdgpl")]
 position = Vector2(128, 128)

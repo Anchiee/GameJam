@@ -6,13 +6,16 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k42wn"]
 size = Vector2(64, 64)
 
-[node name="Box" type="Area2D" unique_id=1105865369]
+[node name="Box" type="CharacterBody2D" unique_id=169786586]
 collision_layer = 2
+collision_mask = 3
 script = ExtResource("1_s8dwy")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1342011401]
+z_index = 2
 offset_right = 64.0
 offset_bottom = 64.0
+pivot_offset = Vector2(32, 32)
 texture = ExtResource("1_k42wn")
 expand_mode = 1
 
@@ -23,15 +26,19 @@ shape = SubResource("RectangleShape2D_k42wn")
 [node name="Up" type="RayCast2D" parent="." unique_id=312269930]
 position = Vector2(32, 1)
 target_position = Vector2(0, -32)
+collision_mask = 3
 
 [node name="Down" type="RayCast2D" parent="." unique_id=964379086]
 position = Vector2(32, 63)
 target_position = Vector2(0, 32)
+collision_mask = 3
 
 [node name="Left" type="RayCast2D" parent="." unique_id=1441981350]
 position = Vector2(1, 32)
 target_position = Vector2(-32, 0)
+collision_mask = 3
 
 [node name="Right" type="RayCast2D" parent="." unique_id=934050223]
 position = Vector2(63, 32)
 target_position = Vector2(32, 0)
+collision_mask = 3
