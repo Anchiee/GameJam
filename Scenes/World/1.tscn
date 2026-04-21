@@ -13,9 +13,9 @@ tile_map_data = PackedByteArray("AAABAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAC4To0jAQAAAAA
 tile_set = ExtResource("2_njnuy")
 
 [node name="Player" parent="." unique_id=2133219243 instance=ExtResource("1_lyj32")]
-position = Vector2(358, 205)
+position = Vector2(192, 128)
 collision_mask = 2
 
 [node name="Key" parent="." unique_id=1993847812 instance=ExtResource("2_6sjw4")]
-position = Vector2(575, 227)
+position = Vector2(576, 256)
 collision_layer = 2
