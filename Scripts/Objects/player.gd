@@ -12,7 +12,7 @@ func _process(_delta):
 		return
 	
 	var dir := return_dir()
-
+	
 	if dir != Vector2.ZERO:
 		move_to_tile(dir)
 

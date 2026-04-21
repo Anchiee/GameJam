@@ -19,6 +19,10 @@ config/icon="res://icon.svg"
 
 LevelManager="*uid://bii3kmo0ue14n"
 
+[dotnet]
+
+project/assembly_name="GameJam"
+
 [file_customization]
 
 folder_colors={
