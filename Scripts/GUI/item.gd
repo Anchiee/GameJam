@@ -8,9 +8,9 @@ extends Area2D
 func _ready() -> void:
 	texture_rect.texture = item_texture
 
-func _on_body_entered(body) -> void:
+func _on_body_entered(_body) -> void:
 	dialogue.show()
 
 
-func _on_area_entered(area: Area2D) -> void:
+func _on_area_entered(_area: Area2D) -> void:
 	dialogue.show()
