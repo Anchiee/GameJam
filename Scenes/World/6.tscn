@@ -99,6 +99,7 @@ dialogue = NodePath("../dialogue")
 item_texture = ExtResource("8_p4cn1")
 
 [node name="dialogue" parent="." unique_id=1680645263 instance=ExtResource("9_ijtph")]
+visible = false
 position = Vector2(571, 320)
 sprite_frames = SubResource("SpriteFrames_3b45i")
 questio = "Widzę dno... Czy to oznacza, że nadchodzi koniec świata i wielki głód?"

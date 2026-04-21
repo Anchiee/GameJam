@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cjk1nvrqgwquv" path="res://Scenes/Interactive/box.tscn" id="3_02gc2"]
 [ext_resource type="PackedScene" uid="uid://d0teppcidowhs" path="res://Scenes/Interactive/gate.tscn" id="4_02gc2"]
 [ext_resource type="PackedScene" uid="uid://j54lupoylhq8" path="res://Scenes/Character/Player.tscn" id="5_a4v8q"]
+[ext_resource type="PackedScene" uid="uid://cfc4l3yc6ss0p" path="res://Scenes/Interactive/Key.tscn" id="6_6mjkg"]
 
 [node name="5" type="Node2D" unique_id=3308118]
 
@@ -46,3 +47,6 @@ open_count = 4
 
 [node name="Player" parent="." unique_id=276534887 instance=ExtResource("5_a4v8q")]
 position = Vector2(192, 384)
+
+[node name="Key" parent="." unique_id=1993847812 instance=ExtResource("6_6mjkg")]
+position = Vector2(1152, 512)
