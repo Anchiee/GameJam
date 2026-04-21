@@ -93,12 +93,12 @@ gate = NodePath("../Gate")
 position = Vector2(832, 512)
 open_count = 6
 
-[node name="Item" parent="." unique_id=500011058 instance=ExtResource("7_2vs4c")]
+[node name="Item" parent="." unique_id=500011058 node_paths=PackedStringArray("dialogue") instance=ExtResource("7_2vs4c")]
 position = Vector2(960, 448)
+dialogue = NodePath("../dialogue")
 item_texture = ExtResource("8_p4cn1")
 
 [node name="dialogue" parent="." unique_id=1680645263 instance=ExtResource("9_ijtph")]
-visible = false
 position = Vector2(571, 320)
 sprite_frames = SubResource("SpriteFrames_3b45i")
 questio = "Widzę dno... Czy to oznacza, że nadchodzi koniec świata i wielki głód?"
