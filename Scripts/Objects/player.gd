@@ -28,13 +28,10 @@ func _process(_delta):
 func return_dir() -> Vector2:
 	var dir = Vector2.ZERO
 	
-	if right.is_colliding():
-		print("wall")
 	if Input.is_action_just_pressed("right") and !right.is_colliding():
 		dir.x = 1
 		character_sprite.rotation = deg_to_rad(90)
 		if b_right.is_colliding():
-			print("box")
 			dir.x = move_box(dir, b_right.get_collider())
 	
 	elif Input.is_action_just_pressed("left") and !left.is_colliding():
