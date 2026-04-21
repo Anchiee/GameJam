@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bohvif3pg3o7l"
-path="res://.godot/imported/nozyczki0000.png-f48a3a9576a2b0d530e26026617d1eca.ctex"
+uid="uid://m8hg5aqhk1ga"
+path="res://.godot/imported/poduszka0001.png-fe5a962b40681b358f4926129e54de3b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/animations/nozyczki0000.png"
-dest_files=["res://.godot/imported/nozyczki0000.png-f48a3a9576a2b0d530e26026617d1eca.ctex"]
+source_file="res://Assets/animations/poduszka/poduszka0001.png"
+dest_files=["res://.godot/imported/poduszka0001.png-fe5a962b40681b358f4926129e54de3b.ctex"]
 
 [params]
 

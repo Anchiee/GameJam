@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://du76bvxub4yoa"
-path="res://.godot/imported/poduszka0000.png-2bcddbba2445dd0841affc5f43a01329.ctex"
+uid="uid://byf68o2g62bkk"
+path="res://.godot/imported/miska0003.png-20fe68ad17faadc5d4d8a798d8e98ead.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/animations/poduszka0000.png"
-dest_files=["res://.godot/imported/poduszka0000.png-2bcddbba2445dd0841affc5f43a01329.ctex"]
+source_file="res://Assets/animations/miska/miska0003.png"
+dest_files=["res://.godot/imported/miska0003.png-20fe68ad17faadc5d4d8a798d8e98ead.ctex"]
 
 [params]
 

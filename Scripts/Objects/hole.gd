@@ -12,5 +12,3 @@ func _on_body_entered(body: Node2D) -> void:
 		collision_shape_2d.set_deferred("disabled", true)
 	if static_body_2d:
 		static_body_2d.queue_free()
-	#if collision_shape_2d:
-		#collision_shape_2d.position.y += 1000
