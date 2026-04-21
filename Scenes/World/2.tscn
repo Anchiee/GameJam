@@ -7,7 +7,7 @@
 [node name="2" type="Node2D" unique_id=2134650588]
 
 [node name="TileMapLayer" parent="." unique_id=2141429955 instance=ExtResource("1_xd7qt")]
-scale = Vector2(0.189, 0.189)
+scale = Vector2(0.1, 0.1)
 tile_map_data = PackedByteArray("AAAAAAAAAQAAAAAAAAABAAAAAQAAAAAAAAACAAAAAQAAAAAAAAADAAAAAQAAAAAAAAAEAAAAAQAAAAAAAAAEAAEAAQAAAAAAAAADAAEAAQAAAAAAAAACAAEAAQAAAAAAAAABAAEAAQAAAAAAAAAAAAEAAQAAAAAAAAA=")
 
 [node name="Key" parent="." unique_id=1993847812 instance=ExtResource("2_kvrw6")]
