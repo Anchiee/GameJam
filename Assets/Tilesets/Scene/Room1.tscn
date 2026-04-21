@@ -4,4 +4,3 @@
 
 [node name="World1" type="TileMapLayer" unique_id=2067364355]
 tile_set = ExtResource("1_slb0q")
-collision_visibility_mode = 1
