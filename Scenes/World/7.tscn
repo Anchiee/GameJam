@@ -1,3 +1,35 @@
 [gd_scene format=3 uid="uid://1uss0pn1882r"]
 
+[ext_resource type="Script" uid="uid://d0rtmwb7f12ql" path="res://Scripts/7.gd" id="1_7hhcv"]
+[ext_resource type="Texture2D" uid="uid://direatcn2uum5" path="res://Assets/Backgrounds/komiks.png" id="1_gt86k"]
+[ext_resource type="Texture2D" uid="uid://blq3vchi356e0" path="res://Assets/Backgrounds/the end.png" id="3_36cer"]
+
 [node name="7" type="Node2D" unique_id=948321735]
+script = ExtResource("1_7hhcv")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1495532795]
+offset_left = -3584.0
+offset_top = -1408.0
+offset_right = 3200.0
+offset_bottom = 2304.0
+color = Color(0, 0, 0, 1)
+
+[node name="Komiks" type="Sprite2D" parent="." unique_id=947167106]
+position = Vector2(-192, 448)
+scale = Vector2(0.89, 0.89)
+texture = ExtResource("1_gt86k")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1788570067]
+position = Vector2(-192, 448)
+zoom = Vector2(0.2, 0.2)
+
+[node name="Timer" type="Timer" parent="." unique_id=1507551362]
+wait_time = 15.0
+autostart = true
+
+[node name="TheEnd" type="Sprite2D" parent="." unique_id=1772345704]
+visible = false
+position = Vector2(-192, 448)
+texture = ExtResource("3_36cer")
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
