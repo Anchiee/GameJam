@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="GameJam"
+config/name="Kocia Przygoda"
 run/main_scene="uid://cw3vi7artvssd"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
